@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+
+
+
+
+
+.nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+        "links1 logo link2";
+    background-image: url(https://steamuserimages-a.akamaihd.net/ugc/786358213601312147/F45F553B7D439EB1B74668FA44FF7B18969D9C9C/?imw=512&&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+
+.links1 {
+    grid-area: links1;
+}
+
+.logo {
+    grid-area: logo;
+
+}
+
+.logo img {
+    width: 250px;
+}
+
+.link2 {
+    grid-area: link2;
+}
+
+.nav ul,
+.logo {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav ul li {
+    margin: 0 10px;
+}
+
+.nav ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+
+
+
+
+
+a {
+
+    display: inline-block;
+    padding: 10px;
+    font-family: Verdana, Tahoma, sans-serif;
+    background-color: none;
+    color: rgb(10, 10, 60);
+
+}
+
+.main-pf a:link {
+    background-color: none;
+    color: darkslateblue;
+}
+
+.main-pf a:hover {
+    font-weight: bold;
+    padding: 20px;
+    background-color: pink;
+    color: azure;
+    box-shadow: inset;
+}
+
+.main-pf a:active {
+    background-color: yellowgreen;
+}
+
+/* .main-pf div:not(.padre) {
+    background-color: antiquewhite;
+    padding-left: 40px;
+
+} */
+
+@media (max-width:300px) {
+    .grid-galeria {
+        grid-template-areas:
+            "img1" "img2"
+            "img3" "img4"
+            "img5" "img6"
+        ;
+    }
+
+}
+
+
+.text-right {
+    text-align: right important;
+}
+
+.imagenes-tay {
+    width: 400px;
+}

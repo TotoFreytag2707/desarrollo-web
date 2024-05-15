@@ -1,0 +1,98 @@
+.taylor_shop {
+    display: flex;
+    /*siempre poner display flex  */
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    /* min-height: 600px; */
+
+
+
+}
+
+/* desordenar para volver a ordenar */
+.producto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 1px 1px 5px 2px maroon;
+    padding-bottom: 10px;
+    margin: 20px;
+    font-family: sans-serif;
+    /* margin para separar las cartas */
+
+
+
+
+}
+
+.producto img {
+    width: 230px;
+
+
+}
+
+/* poner img al lado para modificar, con una propiedad */
+
+.producto button {
+    padding: 5px 15px;
+    margin: 10px;
+    border-radius: 15px;
+    background-color: maroon;
+    color: white;
+
+}
+
+.button2 {
+    padding: 5px 15px;
+    margin: 10px;
+    border-radius: 15px;
+    background-color: maroon;
+    color: white;
+
+}
+
+/* modificar el boton de compra/entrada */
+
+
+/* -----------BOTON FIJO--------- */
+
+
+/* ropa/grids */
+.tay_merch {
+    /* border: maroon solid 3px; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* repeat para simplificar */
+    /* grid-template-rows: repeat(2, 150px);  */
+    column-gap: 20px;
+    align-items: center;
+    /* height: 400px; */
+    justify-content: center;
+    /* sacar alturas si se solapa */
+
+
+}
+
+.tay_merch div {
+    margin: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    width: 200px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 5px 2px maroon;
+    font-family: sans-serif;
+}
+
+.tay_merch p {
+    font-size: 1rem;
+
+}
+
+.tay_merch img {
+    height: 150px;
+}
+

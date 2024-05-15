@@ -1,0 +1,27 @@
+
+/* para acomodar sin necesidad de br */
+.formulario input {
+
+    display: block;
+}
+
+/* propiedad overflow */
+
+
+.formulario {
+    display: block;
+
+}
+
+
+@import './sections/shop';
+
+@import './sections/theerastour';
+
+@import './sections/colors';
+
+@import './sections/fonts';
+
+@import './sections/reset';
+
+@import './sections/nav';
