@@ -12,11 +12,18 @@
 .taylor_shop {
   display: flex;
   /*siempre poner display flex  */
-  flex-direction: row-reverse;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-items: flex-start;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  align-items: none;
   /* min-height: 600px; */
+  font-family: sans-serif;
+  font-size: small;
+}
+
+.letra-producto {
+  font-family: sans-serif;
+  font-size: small;
 }
 
 /* desordenar para volver a ordenar */
@@ -26,13 +33,13 @@
   align-items: center;
   box-shadow: 1px 1px 5px 2px maroon;
   padding-bottom: 10px;
-  margin: 20px;
+  margin: 5px;
   font-family: sans-serif;
   /* margin para separar las cartas */
 }
 
 .producto img {
-  width: 230px;
+  width: 150px;
 }
 
 /* poner img al lado para modificar, con una propiedad */
@@ -85,11 +92,12 @@
 }
 
 .tay_merch img {
-  height: 150px;
+  height: 100px;
 }
 
 .grid-galeria {
   display: grid;
+  justify-content: center;
   grid-template-areas: "img1 img1 img2 img2 " "img3 img4 img4 img5 " "img3 img6 img6 img5 ";
   grid-template-rows: repeat(1, 100px);
   grid-template-columns: repeat(3, 100px);
@@ -176,11 +184,14 @@
 }
 
 .imagenes-tay {
-  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: none;
   justify-content: center;
   filter: drop-shadow(0px 7px 21px yellowgreen);
   animation: rotar 5s linear infinite;
+  width: 200px;
 }
 
 .imagenes-tay {
@@ -195,6 +206,7 @@
     transform: rotateY(360deg);
   }
 }
+@impor @import "./sections/colors";
 * {
   font-family: "briem-hand", cursive;
 }
@@ -212,6 +224,9 @@
   background-image: url(https://steamuserimages-a.akamaihd.net/ugc/786358213601312147/F45F553B7D439EB1B74668FA44FF7B18969D9C9C/?imw=512&&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false);
   background-repeat: no-repeat;
   background-size: cover;
+  padding: 6px;
+  margin: auto;
+  align-items: end;
 }
 
 .links1 {
@@ -230,15 +245,14 @@
   grid-area: link2;
 }
 
-.nav ul,
-.logo {
+.nav ul, .logo {
   display: flex;
   list-style: none;
   justify-content: center;
   align-items: center;
 }
 
-.nav ul li {
+nav ul li {
   margin: 0 10px;
 }
 
@@ -249,45 +263,14 @@
   text-transform: capitalize;
 }
 
-a {
-  display: inline-block;
-  padding: 10px;
-  font-family: Verdana, Tahoma, sans-serif;
-  background-color: none;
-  color: rgb(10, 10, 60);
-}
-
-.main-pf a:link {
-  background-color: none;
-  color: darkslateblue;
-}
-
-.main-pf a:hover {
-  font-weight: bold;
-  padding: 20px;
-  background-color: pink;
-  color: azure;
-  box-shadow: inset;
-}
-
-.main-pf a:active {
-  background-color: yellowgreen;
-}
-
 /* .main-pf div:not(.padre) {
     background-color: antiquewhite;
     padding-left: 40px;
 
 } */
-@media (max-width: 300px) {
-  .grid-galeria {
-    grid-template-areas: "img1" "img2" "img3" "img4" "img5" "img6";
+@media (max-width: 200px) {
+  .nav {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
   }
-}
-.text-right {
-  text-align: right important;
-}
-
-.imagenes-tay {
-  width: 400px;
 }/*# sourceMappingURL=main.css.map */

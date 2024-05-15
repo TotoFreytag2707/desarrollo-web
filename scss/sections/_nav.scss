@@ -17,6 +17,9 @@
     background-image: url(https://steamuserimages-a.akamaihd.net/ugc/786358213601312147/F45F553B7D439EB1B74668FA44FF7B18969D9C9C/?imw=512&&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false);
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 6px;
+    margin: auto;
+    align-items: end;
 
 
 }
@@ -38,17 +41,17 @@
     grid-area: link2;
 }
 
-.nav ul,
-.logo {
+.nav ul, .logo{
     display: flex;
     list-style: none;
     justify-content: center;
     align-items: center;
 }
-
-.nav ul li {
+nav ul li{
     margin: 0 10px;
 }
+
+
 
 .nav ul li a {
     color: rgb(0, 0, 0);
@@ -57,60 +60,20 @@
     text-transform: capitalize;
 }
 
-
-
-
-
-
-a {
-
-    display: inline-block;
-    padding: 10px;
-    font-family: Verdana, Tahoma, sans-serif;
-    background-color: none;
-    color: rgb(10, 10, 60);
-
-}
-
-.main-pf a:link {
-    background-color: none;
-    color: darkslateblue;
-}
-
-.main-pf a:hover {
-    font-weight: bold;
-    padding: 20px;
-    background-color: pink;
-    color: azure;
-    box-shadow: inset;
-}
-
-.main-pf a:active {
-    background-color: yellowgreen;
-}
-
 /* .main-pf div:not(.padre) {
     background-color: antiquewhite;
     padding-left: 40px;
 
 } */
 
-@media (max-width:300px) {
-    .grid-galeria {
-        grid-template-areas:
-            "img1" "img2"
-            "img3" "img4"
-            "img5" "img6"
-        ;
+@media (max-width: 200px){
+    .nav{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        
     }
-
 }
 
 
-.text-right {
-    text-align: right important;
-}
 
-.imagenes-tay {
-    width: 400px;
-}
+

@@ -1,5 +1,6 @@
 .grid-galeria {
     display: grid;
+    justify-content: center;
     grid-template-areas:
         "img1 img1 img2 img2 "
         "img3 img4 img4 img5 "
@@ -109,12 +110,14 @@
     border-radius: 100px;
 }
 .imagenes-tay{
-    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: none;
     justify-content: center;
     filter: drop-shadow(0px 7px 21px yellowgreen);
     animation: rotar 5s linear infinite;
-    
+    width: 200px;
 
 }
 .imagenes-tay{
@@ -128,3 +131,4 @@
         transform: rotateY(360deg)
     }
 }
+
