@@ -206,7 +206,6 @@
     transform: rotateY(360deg);
   }
 }
-@impor @import "./sections/colors";
 * {
   font-family: "briem-hand", cursive;
 }
@@ -272,5 +271,25 @@ nav ul li {
   .nav {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+  }
+}
+.imgp {
+  margin-top: 30px;
+  margin: 20px;
+  width: 300px;
+  height: 250px;
+  animation-name: tay;
+  animation-duration: 80s;
+}
+
+@keyframes tay {
+  0% {
+    transform: translateY(30);
+  }
+  50% {
+    transform: translateY(40px);
+  }
+  100% {
+    transform: translateY(0);
   }
 }/*# sourceMappingURL=main.css.map */
