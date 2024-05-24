@@ -1,105 +1,161 @@
-.taylor_shop {
-    display: flex;
-    /*siempre poner display flex  */
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: nowrap;
-    align-items: none;
-    /* min-height: 600px; */
-    font-family: sans-serif;
-    font-size: small;
-
-
-
-
-}
-.letra-producto{
-    font-family: sans-serif;
-    font-size: small ;
-}
-
-/* desordenar para volver a ordenar */
-.producto {
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #343a40;
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-shadow: 1px 1px 5px 2px maroon;
-    padding-bottom: 10px;
-    margin: 5px;
-    font-family: sans-serif;
-    /* margin para separar las cartas */
-
-
-
-
 }
 
-.producto img {
-    width: 150px;
-
-
-}
-
-/* poner img al lado para modificar, con una propiedad */
-
-.producto button {
-    padding: 5px 15px;
-    margin: 10px;
-    border-radius: 15px;
-    background-color: maroon;
-    color: white;
-
-}
-
-.button2 {
-    padding: 5px 15px;
-    margin: 10px;
-    border-radius: 15px;
-    background-color: maroon;
-    color: white;
-
-}
-
-/* modificar el boton de compra/entrada */
-
-
-/* -----------BOTON FIJO--------- */
-
-
-/* ropa/grids */
-.tay_merch {
-    /* border: maroon solid 3px; */
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    /* repeat para simplificar */
-    /* grid-template-rows: repeat(2, 150px);  */
-    column-gap: 20px;
-    align-items: center;
-    /* height: 400px; */
-    justify-content: center;
-    /* sacar alturas si se solapa */
-
-
-}
-
-.tay_merch div {
-    margin: 3px;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px;
-    width: 200px;
-    border-radius: 15px;
-    box-shadow: 1px 1px 5px 2px maroon;
-    font-family: sans-serif;
 }
 
-.tay_merch p {
+.navbar {
+    border-bottom: 1px solid #dee2e6;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand img {
+    height: 30px;
+    margin-left: 0.5rem;
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-nav .nav-link {
     font-size: 1rem;
-
+    color: #333;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s;
 }
 
-.tay_merch img {
-    height: 100px;
+.navbar-nav .nav-link:hover {
+    color: #007bff;
 }
 
+main {
+    width: 100%;
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #343a40;
+    font-size: 2rem;
+}
+
+.merchandise,
+.other-merch {
+    display: grid;
+    gap: 1.5rem;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    width: 100%;
+    max-width: 1200px;
+}
+
+.product,
+.item {
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    padding: 0.75rem;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product:hover,
+.item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+.product img,
+.item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.25rem;
+    margin-bottom: 0.75rem;
+}
+
+.product h3,
+.item p {
+    margin: 0.25rem 0;
+    color: #495057;
+}
+
+.product h3 {
+    font-size: 1.1rem;
+}
+
+.item p:first-of-type {
+    font-weight: bold;
+}
+
+button {
+    background-color: #007bff;
+    border: none;
+    border-radius: 0.25rem;
+    color: #fff;
+    padding: 0.4rem 0.75rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: auto;
+    font-size: 0.9rem;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+
+    .product,
+    .item {
+        width: 100%;
+    }
+}
+
+
+.product-title,
+.item-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0 5px;
+    text-align: center;
+}

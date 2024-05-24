@@ -4,145 +4,227 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!doctype html>
-    <html lang="en">
-      <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Bootstrap demo</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-      </head>
-      <body>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-      </body>
-    <!-- link css -->
+    <title>Merchandising de The Eras Tour</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../scss/main.css">
 </head>
 
 <body>
-
-    <nav class="nav">
-        <ul class="links1">
-            <li><a href="../index.html">Taylor</a></li>
-            <li><a href="./dates.html">dates</a></li>
-
-        </ul>
-        <div class="logo">
-            <a href="./theerastour.html">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/The_Eras_Tour_Logo.png/640px-The_Eras_Tour_Logo.png"
-                    alt="logo-taylor-al">
-            </a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">Taylor</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="./dates.html">Albums</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./theerastour.html">The Eras Tour</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./shop.html">Tienda</a></li>
+                </ul>
+                <a class="navbar-brand" href="../index.html">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/The_Eras_Tour_Logo.png/640px-The_Eras_Tour_Logo.png"
+                        alt="Logo de The Eras Tour" height="30">
+                </a>
+            </div>
         </div>
-        <ul class="link2">
-            <li><a href="./theerastour.html">the eras tour</a></li>
-            <li><a href="./shop.html">shop</a></li>
-        </ul>
-        <nav>
-            <br>
-            <br>
-            <br>
-            <h2>Merch taylor</h2>
-            <br><br>
-            <!-- flex box -->
-            <section class="taylor_shop">
-                <div class="producto">
-                    <img src="https://m.media-amazon.com/images/I/61fDtzbn8vL._AC_UY436_FMwebp_QL65_.jpg" alt="CD 1989">
-                    <h3 class="letra-producto">CD 1989</h3>
-                    <p>13.99 USD</p>
-                    <button>buy</button>
+    </nav>
 
+    <main class="container">
+        <section class="merchandise">
+            <h2 class="taylor-merch-titulo">CD's</h2>
+            <div class="product">
+                <h3 class="product-title">CD 1989</h3>
+                <img src="https://m.media-amazon.com/images/I/61fDtzbn8vL._AC_UY436_FMwebp_QL65_.jpg" alt="CD 1989">
+                <p>$13.99 USD</p>
+                <button>Comprar</button>
+            </div>
+            <div class="product">
+                <h3 class="product-title">CD REPUTATION</h3>
+                <img src="https://http2.mlstatic.com/D_NQ_NP_963359-MLA44724859692_012021-O.webp" alt="CD REPUTATION">
+                <p>$14.99 USD</p>
+                <button>Comprar</button>
+            </div>
+            <div class="product">
+                <h3 class="product-title">CD TTPD</h3>
+                <img src="https://cdn.louisianamusicfactory.com/media/wp-content/uploads/2024/04/20154649/ts24.jpg"
+                    alt="CD TTPD">
+                <p>$15.99 USD</p>
+                <button>Comprar</button>
+            </div>
+            <div class="product">
+                <h3 class="product-title">CD FOLKLORE</h3>
+                <img src="https://m.media-amazon.com/images/I/716APa8spvL._AC_UY436_FMwebp_QL65_.jpg" alt="CD FOLKLORE">
+                <p>$13.99 USD</p>
+                <button>Comprar</button>
+            </div>
+            <div class="product">
+                <h3 class="product-title">CD MIDNIGHTS</h3>
+                <img src="https://m.media-amazon.com/images/I/616ve5tcSwL._AC_UY436_FMwebp_QL65_.jpg" alt="CD MIDNGIHTS">
+                <p>$13.99 USD</p>
+                <button>Comprar</button>
+            </div>
+            <div class="product">
+                <h3 class="product-title">CD SPEAK NOW</h3>
+                <img src="https://umusicstore.com.ar/cdn/shop/files/Speak_Now_1024x.png?v=1689794782" alt="CD SPEAK NOW">
+                <p>$13.99 USD</p>
+                <button>Comprar</button>
+            </div>
+            <div class="product">
+                <h3 class="product-title">CD FEARLESS</h3>
+                <img src="https://www.umusic.ca/cdn/shop/products/SharedImage-115217_grande.png?v=1662487986" alt="CD FEARLESS">
+                <p>$13.99 USD</p>
+                <button>Comprar</button>
+            </div>
+            <div class="product">
+                <h3 class="product-title">CD DEBUT</h3>
+                <img src="https://contentv2.tap-commerce.com/cover/large/602517874695_1.jpg?id_com=1156" alt="CD DEBUT">
+                <p>$13.99 USD</p>
+                <button>Comprar</button>
+            </div>
+            <div class="product">
+                <h3 class="product-title">CD lOVER</h3>
+                <img src="https://http2.mlstatic.com/D_NQ_NP_871179-MLU54980952820_042023-O.webp" alt="CD LOVER">
+                <p>$13.99 USD</p>
+                <button>Comprar</button>
+            </div>
+            
+            
+            
+            
+        </section>
+
+        <main class="container">
+            <section class="merchandise">
+                <h2 class="taylor-merch-titulo">Vinilos</h2>
+                <div class="product">
+                    <h3 class="product-title">vinilo 1989</h3>
+                    <img src="https://umusicstore.com.ar/cdn/shop/files/LP1_WithDiscs_1024x.png?v=1691768742" alt="CD 1989">
+                    <p>$13.99 USD</p>
+                    <button>Comprar</button>
                 </div>
-                <div class="producto">
-                    <img src="https://http2.mlstatic.com/D_NQ_NP_963359-MLA44724859692_012021-O.webp"
-                        alt="CD REPUTATION">
-                    <h3 class="letra-producto">CD REPUTATION</h3>
-                    <P>14.99 USD</P>
-                    <button>buy</button>
+                <div class="product">
+                    <h3 class="product-title">CD REPUTATION</h3>
+                    <img src="https://shop.udiscovermusic.com/cdn/shop/products/TaylorSwift-Reputation-1LP-Vinyl.png?v=1590104636" alt="CD REPUTATION">
+                    <p>$14.99 USD</p>
+                    <button>Comprar</button>
                 </div>
-                <div class="producto">
-                    <img src="https://cdn.louisianamusicfactory.com/media/wp-content/uploads/2024/04/20154649/ts24.jpg"
+                <div class="product">
+                    <h3 class="product-title">vinilo TTPD</h3>
+                    <img src="https://storeeu.taylorswift.com/cdn/shop/files/Taylor-Swift-The-Tortured-Poets-Department-Vinyl-Bonus-Track-The-Manuscript-Vinyl-506687-428994.a32f2ce0.png?v=1713798835"
                         alt="CD TTPD">
-                    <h3 class="letra-producto">CD TTPD</h3>
-                    <p>15.99</p>
-                    <button>buy</button>
+                    <p>$15.99 USD</p>
+                    <button>Comprar</button>
                 </div>
-                <div class="producto" class="letra-producto">
-                    <img src="https://m.media-amazon.com/images/I/716APa8spvL._AC_UY436_FMwebp_QL65_.jpg"
-                        alt="CD FOLKLORE">
-                    <h3 class="letra-producto">CD FOLKLORE</h3>
-                    <P>13.99</P>
-                    <button>buy</button>
+                <div class="product">
+                    <h3 class="product-title">vinilo FOLKLORE</h3>
+                    <img src="https://www.repdiscosperu.com/cdn/shop/files/Disenosintitulo-47.png?v=1704499979" alt="CD FOLKLORE">
+                    <p>$13.99 USD</p>
+                    <button>Comprar</button>
                 </div>
-                <div class="producto">
-                    <img src="https://m.media-amazon.com/images/I/616ve5tcSwL._AC_UY436_FMwebp_QL65_.jpg"
-                        alt="CD MIDNGIHTS">
-                    <h3 class="letra-producto">CD MIDNIGHTS</h3>
-                    <p>13.99</p>
-                    <button>buy</button>
+                <div class="product">
+                    <h3 class="product-title">vinilo MIDNIGHTS</h3>
+                    <img src="https://storeeu.taylorswift.com/cdn/shop/products/Taylor-Swift-Midnights-Vinyl-143900-356095.png?v=1697641308&width=1000" alt="CD MIDNGIHTS">
+                    <p>$13.99 USD</p>
+                    <button>Comprar</button>
                 </div>
-
+                <div class="product">
+                    <h3 class="product-title">vinilo SPEAK NOW</h3>
+                    <img src="https://storeca.taylorswift.com/cdn/shop/files/3_FrontCoverWithDiscs_orchid.png?v=1685735717" alt="CD SPEAK NOW">
+                    <p>$13.99 USD</p>
+                    <button>Comprar</button>
+                </div>
+                <div class="product">
+                    <h3 class="product-title">vinilo FEARLESS</h3>
+                    <img src="https://store.taylorswift.com/cdn/shop/products/Vinyl_1600x_c4a8f533-02ef-41ac-a2f8-2ce3894593a9.png?v=16130431736" alt="CD FEARLESS">
+                    <p>$13.99 USD</p>
+                    <button>Comprar</button>
+                </div>
+                <div class="product">
+                    <h3 class="product-title">vinilo DEBUT</h3>
+                    <img src="https://sound-merch.com.au/cdn/shop/products/TAYLOR-SWIFT_1024x1024.png?v=1650589206" alt="CD DEBUT">
+                    <p>$13.99 USD</p>
+                    <button>Comprar</button>
+                </div>
+                <div class="product">
+                    <h3 class="product-title">vinilo lOVER</h3>
+                    <img src="https://acdn.mitiendanube.com/stores/002/339/295/products/1_tslovertargetvinyl-a28e9986fe1b2bc7da16970748602344-1024-1024.png" alt="CD LOVER">
+                    <p>$13.99 USD</p>
+                    <button>Comprar</button>
+                </div>
+                
+                
+                
+                
             </section>
-            <!-- otros productos/grids-->
-            <section class="tay_merch">
-                <div>
-                    <img src="https://store.taylorswift.com/cdn/shop/files/wu9rSG4nhEi5ENtFZMHnmnXtffKtvb4e.png?v=1713807584&width=1000"
-                        alt="cardigan TTPD">
-                    <p>cardgigan TTPD</p>
-                    <button class="button2">90 USD</button>
+        
 
-                </div>
-                <div>
-                    <img src="https://acdn.mitiendanube.com/stores/002/339/295/products/t31m0r0r56bl5w8w4ouqogae7azvg8-600x-f723f8f05bd1cba02d16984722068791-640-0.png"
-                        alt="cardigan 1989">
-                    <p>Cardigan 1989 TV</p>
-                    <button class="button2">70 USD</button>
-
-                </div>
-                <div>
-                    <img src="https://media.vogue.es/photos/5f1e7d4e3c18399f201fbbeb/master/w_1600%2Cc_limit/taylor-swift.png"
-                        alt="cardigan folklore">
-                    <p>Cardigan folklore</p>
-                    <button class="button2">60 USD</button>
-
-                </div>
-                <div>
-                    <img src="https://storeau.taylorswift.com/cdn/shop/files/TaylorSwiftTheErasInternationalTourBeigeHoodie-1.png?v=1709255397"
-                        alt="Buzo crema the eras tour">
-                    <p>Buzo The eras tour</p>
-                    <button class="button2">60 usd</button>
-
-                </div>
-                <div>
-                    <img src="https://storeau.taylorswift.com/cdn/shop/files/TS_AUTourBlackT-Shirt-FRONT.png?v=1709011710"
-                        alt="remera crema the eras tour">
-                    <p>remera the eras tour</p>
-                    <button class="button2">30 USD</button>
-
-                </div>
-                <div>
-                    <img src="https://store.taylorswift.com/cdn/shop/files/iU3SrKgPBElTgp0lXpKBfe30xDlYYtVH_3b6fd3e4-174f-4a61-9da9-f013951ca2c4.png?v=1713482319&width=1000"
-                        alt="TTPD buzo">
-                    <p>Buzo TTPD</p>
-                    <button class="button2">70 USD</button>
-
-                </div>
-
-            </section>
-
-
-
-
+        <section class="other-merch">
+            <h2 class="taylor-merch-titulo">Merch ropa</h2>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <div class="item">
+                <p class="item-title">Cardigan TTPD</p>
+                <img src="https://store.taylorswift.com/cdn/shop/files/wu9rSG4nhEi5ENtFZMHnmnXtffKtvb4e.png?v=1713807584&width=1000"
+                    alt="Cardigan TTPD">
+                <p>$90 USD</p>
+                <button>Comprar</button>
             </div>
-            <div class="logo_de_abajo">
-                <button>wpp</button>
-
+            <div class="item">
+                <p class="item-title">Cardigan 1989 TV</p>
+                <img src="https://acdn.mitiendanube.com/stores/002/339/295/products/t31m0r0r56bl5w8w4ouqogae7azvg8-600x-f723f8f05bd1cba02d16984722068791-640-0.png"
+                    alt="Cardigan 1989">
+                <p>$70 USD</p>
+                <button>Comprar</button>
             </div>
-            </main>
-            <footer>
-
-            </footer>
-
+            <div class="item">
+                <p class="item-title">Cardigan folklore</p>
+                <img src="https://media.vogue.es/photos/5f1e7d4e3c18399f201fbbeb/master/w_1600%2Cc_limit/taylor-swift.png"
+                    alt="Cardigan folklore">
+                <p>$60 USD</p>
+                <button>Comprar</button>
+            </div>
+            <div class="item">
+                <p class="item-title">Buzo The eras tour</p>
+                <img src="https://storeau.taylorswift.com/cdn/shop/files/TaylorSwiftTheErasInternationalTourBeigeHoodie-1.png?v=1709255397"
+                    alt="Buzo crema the eras tour">
+                <p>$60 USD</p>
+                <button>Comprar</button>
+            </div>
+            <div class="item">
+                <p class="item-title">Remera the eras tour</p>
+                <img src="https://storeau.taylorswift.com/cdn/shop/files/TS_AUTourBlackT-Shirt-FRONT.png?v=1709011710"
+                    alt="Remera crema the eras tour">
+                <p>$30 USD</p>
+                <button>Comprar</button>
+            </div>
+            <div class="item">
+                <p class="item-title">Buzo TTPD</p>
+                <img src="https://store.taylorswift.com/cdn/shop/files/iU3SrKgPBElTgp0lXpKBfe30xDlYYtVH_3b6fd3e4-174f-4a61-9da9-f013951ca2c4.png?v=1713482319&width=1000"
+                    alt="Buzo TTPD">
+                <p>$60 USD</p>
+                <button>Comprar</button>
+                
+            </div>
+            <div class="item">
+                <p class="item-title">Remera fan</p>
+                <img src="https://store.taylorswift.com/cdn/shop/files/kYEnaMMKqncnlr5nQFRe.png?v=1687282707"
+                    alt="Buzo TTPD">
+                <p>$15 USD</p>
+                <button>Comprar</button>
+            </div>
+            <div class="item">
+                <p class="item-title">Remera crema</p>
+                <img src="https://storeuk.taylorswift.com/cdn/shop/files/large-1-2tvg0Z6Y5ADkbubl6z0h.png?v=1714582394"
+                    alt="Buzo TTPD">
+                <p>$30 USD</p>
+                <button>Comprar</button>
+            </div>
+            
+            
+        </section>
+    </main>
 </body>
 
 </html>

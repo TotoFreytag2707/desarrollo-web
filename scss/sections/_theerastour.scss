@@ -1,134 +1,96 @@
-.grid-galeria {
-    display: grid;
-    justify-content: center;
-    grid-template-areas:
-        "img1 img1 img2 img2 "
-        "img3 img4 img4 img5 "
-        "img3 img6 img6 img5 "
-    ;
-    grid-template-rows: repeat(1, 100px);
-    grid-template-columns: repeat(3, 100px);
-
-
+/* Estilos generales */
+:root {
+    --color-primary: #db97cc;
+    --color-secondary: #740f49;
+    --color-background: #ddd6f8;
+    --color-text: #333;
 }
 
-.grid-galeria div {
-    overflow: hidden;
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url(https://preview.redd.it/c8qn8a1gdut21.jpg?vthumb=1&s=da717d09a908225fd35f3b02ccbbec725aae0e47);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--color-text);
+    margin: 0;
+    padding: 0;
 }
 
-.img-1 {
-    grid-area: img1;
-
-
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-.img-1 img {
-    height: 220%;
+
+.navbar {
+    background-color: pink;
+    box-shadow: 0 2px 4px rgba(224, 102, 173, 0.1);
 }
 
-.img-2 {
-    grid-area: img2;
-
-
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    color: #050505;
 }
 
-.img-2 img {
-    width: 200%;
+.navbar-brand:hover {
+    color: var(--color-primary);
 }
 
-.img-3 {
-    grid-area: img3;
-
+.nav-link {
+    font-size: 18px;
+    color: var(--color-primary);
 }
 
-.img-3 img {
-    height: 220%;
+.nav-link:hover {
+    color: #720e4c;
 }
 
-.img-4 {
-    grid-area: img4;
 
+.mb-4 {
+    margin-bottom: 40px;
 }
 
-.img-4 img {
-    height: 200%;
-
+/* Estilos para los títulos */
+h2,
+h3 {
+    color: var(--color-secondary);
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
 }
 
-.img-5 img {
-    height: 100%;
-
-}
-
-.img-5 {
-    grid-area: img5;
-
-}
-
-.img-6 {
-    grid-area: img6;
-
-}
-
-.img-6 img {
-    height: 100%;
-
-}
-
-.grid-galeria img {
-    width: 300px;
-}
-
-/* -------------responsive---------- */
-/* mobile last max width */
-
-/* tablet */
-@media (max-width:769px) {
-    h1 {
-        background-color: maroon;
-        color: black;
-
-    }
-
-    .tay_merch {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-
-}
-
-@media (max-width: 375px) {
-    .tay_merch {
-        grid-template-columns: 1fr;
-
-    }
-}
-.gif-redondo {
-    width: 200px;
-    height: 200px;
-    overflow: hidden;
-    border-radius: 100px;
-}
-.imagenes-tay{
+/* Estilos para la sección de explicación del tour */
+.explicacion-eras {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: var(--color-background);
+    padding: 20px;
     display: flex;
-    justify-content: center;
     align-items: center;
-    background-color: none;
-    justify-content: center;
-    filter: drop-shadow(0px 7px 21px yellowgreen);
-    animation: rotar 5s linear infinite;
-    width: 200px;
+}
 
+.explicacion-eras img {
+    border-radius: 8px;
+    flex: 0 0 150px;
+    margin-right: 10px;
+    width: 30%;
 }
-.imagenes-tay{
-    cursor: pointer;
+
+.explicacion-eras h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
 }
-@keyframes rotar{
-    from{
-        transform: rotatey(180deg);
-    }
-    to{
-        transform: rotateY(360deg)
-    }
+
+.explicacion-eras p {
+    font-size: 18px;
+    color: #555;
 }
+
+/* Estilos para la sección de duración del tour */
+.giff {
+    border-radius: 8px;
+    width: 30%;
+}
+
 
